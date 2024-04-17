@@ -129,6 +129,7 @@ h2 {
   background: -webkit-linear-gradient(90deg, rgba(233,230,255,1) 0%, rgba(255,255,255,1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  z-index: 50;
 }
 
 bokeh {
@@ -316,7 +317,7 @@ body {
     position: relative;
     width: 180px;
     height: 100px;
-    top: 153px;
+    top: 138px;
     left: 37px;
   
     // left: 50%;

@@ -8,6 +8,20 @@ body {
     overflow: hidden;
   }
   
+  .icon{
+  position: absolute;
+
+
+  border-radius: 50%;
+  right: 2px;
+  font-size: 35px;
+  color: #f15bb5;
+  bottom: 5px;
+  text-align: center;
+  }
+  .icon1{
+    
+  }
   .birthdayCard {
     position: relative;
     width: 250px;
@@ -23,30 +37,61 @@ body {
     box-shadow: inset 100px 20px 100px rgba(0,0,0,.15), 0 10px 100px rgba(0,0,0,0.3);
   }
   
-  .birthdayCard:hover .cardFront {
+  .page1 {
+    z-index: 3000;
     transform: rotateY(-160deg); 
+
+  }
+  
+  .page2{
+    z-index: 2000;
+    transform: rotateY(-150deg); 
+.inside-text{
+    transform: rotatey(180deg);
+}
+ .wishes{
+    /* display: none; */
+    transform: rotatey(180deg);
+
+ }
+  }
+  .page3{
+    z-index: 1000;
+    .icon{
+        /* left: 0; */
+        transform: rotateY(180deg);
+    }
   }
   
   @media screen and (max-width: 750px){
-    .birthdayCard:hover .cardFront {
+    .page1{
+        z-index: 3000;
     transition: .4s all ease;
 
         transform: rotateY(-350deg); 
       }
+      .page2{
+        z-index: 2000;
+        transform: rotateY(-350deg); 
+    
+     .wishes{
+        display: none;
+     }
     
   }
+}
   .birthdayCard:hover .front-text {
     display: none;
   }
   
-  .birthdayCard:hover .wrap-deco {
+  /* .birthdayCard:hover .wrap-deco {
     display: none;
   }
   
   .birthdayCard:hover .wrap-decoTwo {
     display: none;
   }
-  
+   */
   .birthdayCard:hover .plate {
     display: none;
   }
@@ -61,6 +106,7 @@ body {
     transform-origin: left;
     box-shadow: inset 100px 20px 100px rgba(0,0,0,.13), 30px 0 50px rgba(0,0,0,0.1);
     transition: .4s all ease;
+    z-index: 3000;
   }
   
   .happy, .toyou {
@@ -158,9 +204,11 @@ body {
     background-color: #fff;
     width: 250px;
     height:350px;
-    z-index:-1;
+    /* z-index:-1; */
     left:0;
     top:0;
+    transform-origin: left;
+    transition: 4s all ;
     box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2);
   }
   
