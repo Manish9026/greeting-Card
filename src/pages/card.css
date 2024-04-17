@@ -7,6 +7,10 @@ body {
     background-color: #00bbf9;
     overflow: hidden;
   }
+  h2,h3,p{
+    margin: 0;
+    padding: 0;
+  }
   
   .icon{
   position: absolute;
@@ -106,9 +110,9 @@ body {
     display: none;
   }
    */
-  .birthdayCard:hover .plate {
+  /* .birthdayCard:hover .plate {
     display: none;
-  }
+  } */
   
   .cardFront {
     position: relative;
@@ -132,11 +136,11 @@ body {
   }
   
   .happy {
-    top:198px;
+    /* top:198px; */
   }
   
   .toyou {
-    top:123px;
+    /* top:123px; */
   }
   
   .bday {
@@ -144,7 +148,8 @@ body {
     font-family: arial;
     font-size: 35px;
     text-align: center;
-    top:163px;
+    /* top:163px; */
+    top: 0;
   }
   
   .wrap-deco {
@@ -228,13 +233,17 @@ body {
   
   .inside-text {
     position: relative;
-    top:-160px;
+    /* top:-160px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     transform: scale(0.7);
   }
   
   .wishes {
     position: relative;
-    top:-100px;
+    /* top:-100px; */
     margin: 25px;
   }
   
