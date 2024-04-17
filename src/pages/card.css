@@ -17,6 +17,7 @@ body {
   font-size: 35px;
   color: #f15bb5;
   bottom: 5px;
+  /* z-index: 100; */
   text-align: center;
   }
   .icon1{
@@ -40,27 +41,29 @@ body {
   .page1 {
     z-index: 3000;
     transform: rotateY(-160deg); 
-
+ 
   }
   
   .page2{
     z-index: 2000;
     transform: rotateY(-150deg); 
 .inside-text{
-    transform: rotatey(180deg);
+   display: none;
 }
  .wishes{
-    /* display: none; */
-    transform: rotatey(180deg);
+    display: none;
+   
 
  }
   }
   .page3{
-    z-index: 1000;
-    .icon{
-        /* left: 0; */
-        transform: rotateY(180deg);
-    }
+    z-index: 1200;
+    transform: rotateY(-150deg); 
+
+   
+  }
+  .page4{
+    z-index: 900;
   }
   
   @media screen and (max-width: 750px){
@@ -73,11 +76,22 @@ body {
       .page2{
         z-index: 2000;
         transform: rotateY(-350deg); 
-    
+        .inside-text{
+          display: none;
+       }
      .wishes{
         display: none;
      }
     
+  }
+  .page3{
+    z-index: 1000;
+    transform: rotateY(-350deg); 
+
+    
+  }
+  .page4{
+    z-index: 900;
   }
 }
   .birthdayCard:hover .front-text {
@@ -105,7 +119,7 @@ body {
     overflow: hidden;
     transform-origin: left;
     box-shadow: inset 100px 20px 100px rgba(0,0,0,.13), 30px 0 50px rgba(0,0,0,0.1);
-    transition: .4s all ease;
+    transition: 4s ease all;
     z-index: 3000;
   }
   
