@@ -1,14 +1,15 @@
 import React from 'react'
 import './card.css';
+import Text from './component/text/Text.jsx';
 const Card = () => {
   return (
     <div className="birthdayCard">
 <div className="cardFront">
-  <div className="front-text">
+  {/* <div className="front-text">
   <h3 className="happy">HAPPY</h3>
   <h2 className="bday">BIRTHDAY</h2> 
   <h3 className="toyou">to you!</h3>  
-  </div>
+  </div> */}
   <div className="wrap-deco">
 <div className="decorations"></div>
 <div className="decorationsTwo"></div>
@@ -17,10 +18,12 @@ const Card = () => {
 <div className="decorations"></div>
 <div className="decorationsThree"></div>
   </div>
-  <div className="plate">
+  {/* <div className="plate">
     <div className="cake"></div>
     <div className="flame"></div>
-  </div>
+  </div> */}
+
+  <Text/>
 </div>
   
   <div className="cardInside">
